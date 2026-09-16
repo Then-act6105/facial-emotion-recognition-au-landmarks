@@ -1,6 +1,5 @@
 <p align="center">
-  <h1 align="center">Facial Emotion Recognition Using Deep Learning</h1>
-  <p align="center"><b>Landmark-Based and Action Unit-Aligned Facial Region Feature Extraction</b></p>
+  <h1 align="center">Facial Expression Recognition Using Generic and Action Unit Aligned Facial Regions</h1>
   <p align="center">A comparative study of CNN-based landmark processing and fusion strategies for facial expression recognition</p>
 </p>
 
@@ -19,7 +18,7 @@
 </p>
 
 ---
-
+> 🏆 **Best result:** SCNN-FC — **72.88% test accuracy**, **0.923 ROC-AUC** on RAF-DB (7 generic landmark regions, ~975K parameters)
 ## 📌 Quick Summary
 
 | | |
