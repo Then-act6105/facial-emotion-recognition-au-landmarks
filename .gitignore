@@ -1,0 +1,19 @@
+# ==============================
+# Generated Results
+# ==============================
+
+# Checkpoints anywhere under Results
+src/Results/**/*.pt
+src/Results/**/*.pth
+src/Results/**/*.ckpt
+
+# Generated figures — ignored globally, except tracked assets
+*.png
+*.jpg
+*.jpeg
+!docs/**/*.png
+
+# ==============================
+# MediaPipe task model
+# ==============================
+**/face_landmarker.task

@@ -1,0 +1,347 @@
+{
+    "experiment_id": "7e8f44c5-2b52-47a1-8b42-920b30a34b26",
+    "timestamp": "2026-07-19 06:39:08",
+    "timing": {
+        "dataset_loading_time": 0.02762746810913086,
+        "data_preprocessing_time": 0.02236199378967285,
+        "model_initialization_time": 0.3328099250793457,
+        "total_training_time": 3495.2974145412445,
+        "average_epoch_training_time": 317.7543104128404,
+        "evaluation_time": 50.846593618392944,
+        "model_saving_time": 0.02442193031311035,
+        "complete_pipeline_execution_time": 3667.572655916214
+    },
+    "model_performance_summary": {
+        "best_validation_accuracy": 38.80921338548457,
+        "test_accuracy": 38.85267275097784,
+        "model_name": "S3D_CNN"
+    },
+    "output_info": {},
+    "system_info": {
+        "os": "Linux",
+        "node_name": "98f4dcc93ac8",
+        "release": "6.12.90+",
+        "version": "#1 SMP Sat May 30 15:40:53 UTC 2026",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_version": "3.12.13",
+        "device_used": "cuda",
+        "cuda_version": "12.8",
+        "gpu_name": "Tesla T4",
+        "num_gpus": 2,
+        "framework_versions": {
+            "pytorch": "2.10.0+cu128",
+            "torchvision": "0.25.0+cu128",
+            "numpy": "2.0.2",
+            "pandas": "2.3.3",
+            "scikit-learn": "1.6.1"
+        }
+    },
+    "dataset_info": {
+        "name": "RAF-DB",
+        "num_classes": 7,
+        "random_seed": 42,
+        "dataset_path": "/kaggle/input/datasets/tanishmittal/rafdb",
+        "train_samples": 10737,
+        "validation_samples": 2301,
+        "test_samples": 2301,
+        "train_val_test_split_ratio": "70/15/15 (approx)"
+    },
+    "model_config": {
+        "model_name": "S3D_CNN",
+        "total_parameters": 2884487,
+        "trainable_parameters": 2884487,
+        "batch_size": 64,
+        "learning_rate": 0.1,
+        "optimizer_name": "Adam",
+        "loss_function": "CrossEntropyLoss",
+        "scheduler_information": "ReduceLROnPlateau",
+        "data_augmentation_configuration": "None",
+        "data_augmentation_enabled": false,
+        "early_stopping_patience": 10,
+        "dropout": 0.4,
+        "weight_decay": 1e-05,
+        "pretrained": false,
+        "freeze_backbone": false,
+        "num_landmarks": 10,
+        "with_au": true,
+        "landmark_identifier": "AU-AU1-AU2-AU4-AU5-AU6-AU9-AU12-AU15-AU17-AU26",
+        "dataset_name": "RAF-DB"
+    },
+    "train_losses": [
+        1.8931218824251588,
+        1.6448791249122345,
+        1.6461313293223787,
+        1.6441453855397639,
+        1.6444840082478742,
+        1.6483580034583198,
+        1.6446071297826854,
+        1.639628358312278,
+        1.6391277371188322,
+        1.6390703471554962,
+        1.6394213602575518
+    ],
+    "val_losses": [
+        1.6279056886132517,
+        1.6438266172558265,
+        1.6423208368492872,
+        1.6459481802156624,
+        1.6458142953352117,
+        1.6405894093179847,
+        1.644038129350197,
+        1.6388715180248243,
+        1.6390865730337867,
+        1.6394759949162336,
+        1.6388122095122952
+    ],
+    "train_accuracies": [
+        37.6734655862904,
+        38.82835056347211,
+        38.82835056347211,
+        38.837664151997764,
+        38.837664151997764,
+        38.837664151997764,
+        38.837664151997764,
+        38.837664151997764,
+        38.837664151997764,
+        38.837664151997764,
+        38.837664151997764
+    ],
+    "val_accuracies": [
+        38.80921338548457,
+        38.80921338548457,
+        38.63537592351152,
+        38.80921338548457,
+        38.80921338548457,
+        38.80921338548457,
+        38.80921338548457,
+        38.80921338548457,
+        38.80921338548457,
+        38.80921338548457,
+        38.80921338548457
+    ],
+    "epoch_times": [
+        352.57181572914124,
+        306.6496331691742,
+        310.77182126045227,
+        307.1787374019623,
+        308.6604423522949,
+        311.49878764152527,
+        319.18041706085205,
+        315.0972943305969,
+        317.4961578845978,
+        322.8740282058716,
+        323.31217861175537
+    ],
+    "epochs_run": 11,
+    "epochs_total": 200,
+    "epochs_run_over_total": "11/200",
+    "evaluation_metrics": {
+        "top1_accuracy": 38.85267275097784,
+        "top2_accuracy": 59.71316818774446,
+        "precision_macro": 0.05550381821568262,
+        "recall_macro": 0.14285714285714285,
+        "f1_macro": 0.07994634473507713,
+        "precision_weighted": 0.15095301798945757,
+        "recall_weighted": 0.38852672750977835,
+        "f1_weighted": 0.2174290418740168,
+        "classification_report": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 243.0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 54.0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 131.0
+            },
+            "3": {
+                "precision": 0.38852672750977835,
+                "recall": 1.0,
+                "f1-score": 0.5596244131455399,
+                "support": 894.0
+            },
+            "4": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 369.0
+            },
+            "5": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 130.0
+            },
+            "6": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 480.0
+            },
+            "accuracy": 0.38852672750977835,
+            "macro avg": {
+                "precision": 0.05550381821568262,
+                "recall": 0.14285714285714285,
+                "f1-score": 0.07994634473507713,
+                "support": 2301.0
+            },
+            "weighted avg": {
+                "precision": 0.15095301798945757,
+                "recall": 0.38852672750977835,
+                "f1-score": 0.2174290418740168,
+                "support": 2301.0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                243,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                54,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                131,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                894,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                369,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                130,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                480,
+                0,
+                0,
+                0
+            ]
+        ],
+        "roc_auc_score": 0.5704219763687036
+    },
+    "test_metrics": {
+        "top1_accuracy": 38.85267275097784,
+        "top2_accuracy": 59.71316818774446,
+        "precision_macro": 0.05550381821568262,
+        "precision_weighted": 0.15095301798945757,
+        "recall_macro": 0.14285714285714285,
+        "recall_weighted": 0.38852672750977835,
+        "f1_macro": 0.07994634473507713,
+        "f1_weighted": 0.2174290418740168,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                243,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                54,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                131,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                894,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                369,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                130,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                480,
+                0,
+                0,
+                0
+            ]
+        ]
+    }
+}
